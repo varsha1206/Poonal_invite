@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        #boxRoot {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background-color: #318641;
+        }
+        #boxContainer {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%; /* 90% of the viewport width */
+          height: 100%; /* 90% of the viewport height */
+          overflow: auto;
+          background-color: #318641;
+        }
+        #background-image {
+          width: 100%; /* Set the image width to 100% */
+          height: auto; /* Let the height adjust proportionally */
+          display: block;
+        }
+        #address-box {
+           width: 100%;
+           max-width: 600px; /* Adjust the maximum width as needed */
+           padding: 20px;
+           background-color: #318641;
+           margin: 0 auto; /* Center the address box horizontally */
+       }
+       #map {
+           width: 100%;
+           max-width: 600px; /* Adjust the maximum width as needed */
+           height: 450px; /* Set the default height of the map */
+           margin: 0 auto; /* Center the map horizontally */
+       }
+       /* Media queries for responsive design */
+        @media (max-width: 768px) {
+            #address-box, #map {
+                max-width: 90%; /* Adjust the maximum width for smaller screens */
+            }
+            #map {
+                height: 300px; /* Adjust the height for smaller screens */
+            }
+        }
+        /* Style the h1 element */
+       #address-box h1 {
+           font-size: 50px; /* Adjust the font size as needed */
+           color: #ede4b8; /* Custom color for h1 */
+       }
+
+       /* Style the p element */
+       #address-box p {
+           font-size: 35px; /* Adjust the font size as needed */
+           color: #e8d36c; /* Custom color for p */
+       }
+    </style>
+</head>
+<body>
+    <div id="boxRoot">
+        <div id="boxContainer">
+            <img id="background-image" src="poonal_invite.png" alt="Background Image">
+            <div id="address-box">
+                <h1>Venue Details</h1>
+                <p>S R K Mahal A/C<br>Address: g, 53, Drowpathy Amman Koil St, Vanuvampet, Madipakkam, Chennai, Tamil Nadu 600091</p>
+            </div>
+            <div id="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.881162216882!2d80.19278107377149!3d12.97945191470871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5260d68c8ba58b%3A0xc9c98fa3c2c67e43!2sS%20R%20K%20Mahal%20A%2FC!5e0!3m2!1sen!2sin!4v1698754791602!5m2!1sen!2sin&z=25" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
