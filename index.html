@@ -72,8 +72,7 @@
         }
         .bus-heading {
            font-size: 30px; /* Increased font size for the centered heading */
-           color: #e8d36c;
-           text-align: center; /* Black color for the centered heading */
+           color: #e8d36c; /* Black color for the centered heading */
        }
        .bus-details {
            font-size: 20px; /* Increased font size for bus details */
@@ -83,10 +82,11 @@
            padding: 0; /* Remove default padding */
        }
         .bus-details table {
-            width: 600px; /* Set the table width to 100% */
+            width: 100%; /* Set the table width to 100% */
+            max-width: 600px;
+            height: 500px;
             border-collapse: collapse; /* Remove cell spacing and borders */
-            margin: 0 auto; /* Center the table horizontally */
-            overflow-x: auto;
+            margin: 0 auto;
         }
         .bus-details th, .bus-details td {
             padding: 8px; /* Add padding to table cells */
@@ -100,6 +100,19 @@
             background-color: #ede4b8;
             color: #000 /* Custom background color for table cells */
         }
+        @media (max-width: 600px) {
+           .bus-heading {
+               font-size: 24px; /* Decrease font size for smaller screens */
+           }
+           .bus-details {
+               font-size: 16px; /* Decrease font size for smaller screens */
+           }
+       }
+       #spaceAfterTable {
+           height: 150px; /* You can adjust the height to your preference */
+       }
+
+
     </style>
 </head>
 <body>
@@ -168,6 +181,7 @@
                 </table>
             </div>
        </div>
+       <div id="spaceAfterTable"></div>
         </div>
     </div>
 </body>
