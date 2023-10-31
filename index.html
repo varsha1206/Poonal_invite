@@ -38,7 +38,7 @@
        #map {
            width: 100%;
            max-width: 600px; /* Adjust the maximum width as needed */
-           height: 800px; /* Set the default height of the map */
+           height: 500px; /* Set the default height of the map */
            margin: 0 auto; /* Center the map horizontally */
        }
        /* Media queries for responsive design */
@@ -47,8 +47,7 @@
                 max-width: 90%; /* Adjust the maximum width for smaller screens */
             }
             #map {
-                max-width: 90%
-                height: 800px; /* Adjust the height for smaller screens */
+                height: 550px; /* Adjust the height for smaller screens */
             }
         }
         /* Style the h1 element */
@@ -62,6 +61,43 @@
            font-size: 35px; /* Adjust the font size as needed */
            color: #e8d36c; /* Custom color for p */
        }
+       #busRoutes {
+            text-align: center; /* Center text horizontally */
+            color: #fff; /* Text color for contrast */
+            background-color: #318641;
+            max-width: 100%; /* Maximum width of the container */
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .bus-heading {
+           font-size: 30px; /* Increased font size for the centered heading */
+           color: #e8d36c; /* Black color for the centered heading */
+       }
+       .bus-details {
+           font-size: 20px; /* Increased font size for bus details */
+           color: #000; /* Black color for bus details */
+           text-align: center; /* Align bus details to the left */
+           list-style: none; /* Remove list bullets */
+           padding: 0; /* Remove default padding */
+       }
+        .bus-details table {
+            width: 600px; /* Set the table width to 100% */
+            border-collapse: collapse; /* Remove cell spacing and borders */
+            margin: 0 auto; /* Center the table horizontally */
+        }
+        .bus-details th, .bus-details td {
+            padding: 8px; /* Add padding to table cells */
+            text-align: center; /* Align text within cells */
+        }
+        .bus-details th {
+            background-color: #e8d36c; /* Custom background color for table headers */
+            color: #000; /* Custom text color for table headers */
+        }
+        .bus-details td {
+            background-color: #ede4b8;
+            color: #000 /* Custom background color for table cells */
+        }
     </style>
 </head>
 <body>
@@ -75,6 +111,61 @@
             <div id="map">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.881162216882!2d80.19278107377149!3d12.97945191470871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5260d68c8ba58b%3A0xc9c98fa3c2c67e43!2sS%20R%20K%20Mahal%20A%2FC!5e0!3m2!1sen!2sin!4v1698754791602!5m2!1sen!2sin&z=25" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+            <div id="busRoutes">
+           <h2 class="bus-heading">Bus Stop Name: Vanuvampet</h2>
+           <div class="bus-details">
+                <table>
+                    <tr>
+                        <th>Bus Number</th>
+                        <th>Route</th>
+                    </tr>
+                    <tr>
+                        <td>51S</td>
+                        <td>SAIDAPET to TAMBARAM</td>
+                    </tr>
+                    <tr>
+                        <td>M51</td>
+                        <td>T.NAGAR to MADIPAKKAM</td>
+                    </tr>
+                    <tr>
+                        <td>B51</td>
+                        <td>T.NAGAR to TAMBARAM</td>
+                    </tr>
+                    <tr>
+                        <td>18D</td>
+                        <td>HIGH COURT to KEELKATALAI</td>
+                    </tr>
+                    <tr>
+                        <td>M18D</td>
+                        <td>T.NAGAR to KEELKATALAI</td>
+                    </tr>
+                    <tr>
+                        <td>M14</td>
+                        <td>ST. THOMAS MT. to MEDAVAKKAM</td>
+                    </tr>
+                    <tr>
+                        <td>51F</td>
+                        <td>T.NAGAR to SUNNAMBUKULATHUR</td>
+                    </tr>
+                    <tr>
+                        <td>52K</td>
+                        <td>T.NAGAR to KEELKATALAI</td>
+                    </tr>
+                    <tr>
+                        <td>M11</td>
+                        <td>SAIDAPET to MEDAVAKKAM</td>
+                    </tr>
+                    <tr>
+                        <td>S82</td>
+                        <td>ALANDUR to ULLAGARAM</td>
+                    </tr>
+                    <tr>
+                        <td>S85</td>
+                        <td>VELACHERY to ULLAGARAM</td>
+                    </tr>
+                </table>
+            </div>
+       </div>
         </div>
     </div>
 </body>
